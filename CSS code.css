@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS targets the h2 element */
+        h2 {
+            color: purple;
+            font-size: 30px;
+            border-bottom: 2px solid purple;
+            padding-bottom: 5px;
+        }
+        /* Internal CSS for a specific paragraph class (Task 2) */
+        .internal-paragraph {
+            color: firebrick;
+            font-size: 14px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Demonstrating CSS Hierarchy</h1>
+    <h1 style="color: blue; font-size: 40px; text-decoration: underline;">
+        1. This Heading uses Inline CSS
+    </h1>
+    <h2>
+        2. This Heading uses Internal CSS
+    </h2>
+    <h3>
+        3. This Heading uses External CSS
+    </h3>
+    <hr>
+    <h2>Paragraph Styling Examples (Task 2)</h2>
+    <p>
+        This paragraph is styled by External CSS(default gray color, 16px size).
+    <p style="color: darkcyan; font-size: 20px; font-weight: bold;">
+        This paragraph is styled by **Inline CSS** (darkcyan, 20px, bold).
+    </p>
+</body>
+</html>
+<html lang="en">
+<head>
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Simple About Page</h1>
+    </header>
+    <div id="main-content">
+        <h2>Who Am I? (Styled by External CSS)</h2>
+        <p>
+            I am an example page. My font and header colors are set by the **external stylesheet** (`about-styles.css`). The light blue background of this main content box is controlled by **Internal CSS**.
+        </p>
+        <p style="color: green; font-weight: bold; font-size: 18px; border-left: 3px solid green; padding-left: 10px;">
+            This paragraph uses **Inline CSS**. It has a unique green color and a larger, bold font, demonstrating the highest level of style priority.
+        </p>
+        <p>
+            This final paragraph uses the default styles set in the external sheet.
+        </p>
+    </div>
+    <footer>
+        <p>
+            &copy; 2025 CSS Demo. This footer text style is controlled by Internal CSS.
+        </p>
+    </footer>
+</body>
+</html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS Only Page</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main class="container">
+        <h1>Welcome to the External CSS Demo</h1>
+        <section class="card">
+            <h2>Our Mission</h2>
+            <p>
+                This entire page is styled using **External CSS only**. All colors, fonts, and layout rules are stored in the separate `main.css` file.
+            </p>
+        </section>
+        <section class="card secondary">
+            <h2>Key Benefits</h2>
+            <ul>
+                <li>Faster loading</li>
+                <li>Easier maintenance</li>
+                <li>Clean separation of structure (HTML) and style (CSS)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>This layout, colors, and spacing are 100% controlled by main.css.</p>
+    </footer>
+</body>
+</html>
